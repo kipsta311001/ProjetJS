@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title> Modèle Programmation Javascript</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>    
+    <body>
+	
+
+    <h1 style="text-align: center">Paint on WEB</h1>
+    <br>
+
+
+    <br>
+    <div class="mx-auto" style="width: 1500px;">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-secondary">Selectionner
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cursor" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+                </svg>
+            </button>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Couleurs de remplissage
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#" id="pred">Rouge</a>
+                    <a class="dropdown-item" href="#" id="pblue" >Bleu</a>
+                    <a class="dropdown-item" href="#" id="pgreen" >Vert</a>
+                    <a class="dropdown-item" href="#" id="pblack" >Noir</a>
+                    <a class="dropdown-item" href="#" id="pwhite" >Blanc</a>
+                    <a class="dropdown-item" href="#" id="codePHexa">Code hexadecimal : <input type="text" id="codePHexa1"
+                                                                                minlength="7" maxlength="7" value="#"> </a>
+                </div>
+            </div>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Couleurs
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#" id="red">Rouge</a>
+                    <a class="dropdown-item" href="#" id="blue" >Bleu</a>
+                    <a class="dropdown-item" href="#" id="green" >Vert</a>
+                    <a class="dropdown-item" href="#" id="black" >Noir</a>
+                    <a class="dropdown-item" href="#" id="white" >Blanc</a>
+                    <a class="dropdown-item" href="#" id="codeHexa">Code hexadecimal : <input type="text" id="codeHexa1"
+                                                                                 minlength="7" maxlength="7" value="#"> </a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="forme" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Forme
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#" id="Libre">Libre</a>
+                    <a class="dropdown-item" href="#" id="Ligne">Ligne</a>
+                    <a class="dropdown-item" href="#" id="Cercle">Cercle</a>
+                    <a class="dropdown-item" href="#" id="CerclePlein">Cercle Plein</a>
+                    <a class="dropdown-item" href="#" id="Rectangle">Rectangle</a>
+                    <a class="dropdown-item" href="#" id="RectanglePlein">Rectangle Plein</a>
+                </div>
+            </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Epaisseur de la ligne
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#" id="epai1" >Petit</a>
+                    <a class="dropdown-item" href="#" id="epai2" >Moyen</a>
+                    <a class="dropdown-item" href="#" id="epai3" >Gros</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <canvas id="canvas"></canvas>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+   <script src="js/script.js"> </script>
+
+    </body>
+</html>
