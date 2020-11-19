@@ -45,7 +45,7 @@ $(document).ready(function() {
                 request.done(function( msg ) {
                    
                     var lesCommunes = document.getElementById("commune");
-                    lesCommunes.addEventListener("change", ChangerCom, false );
+                    
         
                     CDirect();
                     
